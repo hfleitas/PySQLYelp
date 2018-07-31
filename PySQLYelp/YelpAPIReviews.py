@@ -2,13 +2,11 @@ from yelpapi import YelpAPI
 import argparse
 from pprint import pprint
 
-argparser = argparse.ArgumentParser(description='Example Yelp queries using yelpapi. '
-                                                'Visit https://www.yelp.com/developers/v3/manage_app to get the '
-                                                'necessary API keys.')
-argparser.add_argument('api_key', type=str, help='Yelp Fusion API Key')
-args = argparser.parse_args()
+# yelpapi requires api key to join Developer Beta.
+## ref: https://www.yelp.com/developers/v3/manage_app
 
-yelp_api = YelpAPI(args.api_key)
+app_secret = 'app_secret' #api key
+yelp_api = YelpAPI(app_secret)
 
 """
     Example search by location text and term. 
