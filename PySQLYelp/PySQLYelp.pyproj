@@ -22,6 +22,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PySQLYelp.py" />
+    <Compile Include="YelpAPIReviews.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YelpReviews.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddTable.sql" />
